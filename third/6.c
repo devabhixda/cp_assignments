@@ -1,24 +1,18 @@
 #include <stdio.h>
 int fibo(int);
- 
 int main()
 {
     int num;
     int result;
     int c, i = 0;
- 
     printf("Enter the number of terms: ");
     scanf("%d", &num);
-
     for ( c = 1 ; c <= num ; c++ )
    {
       printf("%d ", fibo(i));
-      i++; 
+      i++;
    }
- 
- 
- 
-    
+   printf("\n");
     return 0;
 }
 int fibo(int num)
@@ -33,7 +27,6 @@ int fibo(int num)
     }
     else
     {
-        
         return(fibo(num - 1) + fibo(num - 2));
     }
 }

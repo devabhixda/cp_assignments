@@ -14,7 +14,7 @@ int main()
 
     result = power(x, n);
 
-    printf("%d^%d = %d", x, n, result);
+    printf("%d^%d = %d\n", x, n, result);
     return 0;
 }
 

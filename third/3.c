@@ -3,14 +3,17 @@
 struct student
 {
 int roll_no;
-char branch[100];
+char branch[10];
 int marks;
+char name[100];
 } student1,student2,student3;
 int main()
 {
 printf("Enter Student1 data\n");
 printf("Roll no-");
 scanf("%d",&student1.roll_no);
+printf("Name-");
+scanf("%s",student1.name);
 printf("Branch-");
 scanf("%s",student1.branch);
 printf("Marks-");
@@ -18,6 +21,8 @@ scanf("%d",&student1.marks);
 printf("Enter Student3 data\n");
 printf("Roll no-");
 scanf("%d",&student2.roll_no);
+printf("Name-");
+scanf("%s",student2.name);
 printf("Branch-");
 scanf("%s",student2.branch);
 printf("Marks-");
@@ -25,6 +30,8 @@ scanf("%d",&student2.marks);
 printf("Enter Student3 data\n");
 printf("Roll no-");
 scanf("%d",&student3.roll_no);
+printf("Name-");
+scanf("%s",student3.name);
 printf("Branch-");
 scanf("%s",student3.branch);
 printf("Marks-");
@@ -37,11 +44,11 @@ void branch()
 {
 printf("Roll no of student with branch cs-\n");
 if(strcmp(student1.branch, "cs")==0)
-printf("%d\n",student1.roll_no);
+printf("%s\n",student1.name);
 if(strcmp(student2.branch, "cs")==0)
-printf("%d\n",student2.roll_no);
+printf("%s\n",student2.name);
 if(strcmp(student3.branch, "cs")==0)
-printf("%d\n",student3.roll_no);
+printf("%s\n",student3.name);
 }
 void marks()
 {
